@@ -2,7 +2,28 @@
 
 <img src="https://miro.medium.com/max/800/1*gEBdwJRxgGWUhZb8REN8uw.png"></a>
 
-# Test Code 
+## android gradle dependencies
+```
+
+//Mockito
+  dedicated --->  testCompile 'junit:junit:4.12'
+  
+    testImplementation 'org.mockito:mockito-core:1.10.19'
+
+
+testOptions {
+        unitTests.all {
+            // All the usual Gradle options.
+            jvmArgs '-XX:MaxPermSize=256m'
+            unitTests.includeAndroidResources = true
+
+        }
+    }
+    
+```
+
+
+## Test Code 
 
 ```
  // 1
